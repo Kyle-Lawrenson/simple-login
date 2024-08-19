@@ -1,9 +1,9 @@
 require ("dotenv").config();
 const express = require ("express");
+const SQLconnection = require("./db/connection");
 const app = express();
 
-const port = 5002;
-// const port = process.env.PORT || 5001;
+const port = process.env.PORT || 5002;
 
 app.get("/health", (req, res) => {
     res.status(200).json({
