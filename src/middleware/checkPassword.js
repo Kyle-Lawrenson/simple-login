@@ -11,8 +11,8 @@ const checkPassword= async (req,res,next) => {
             }
         })
         console.log(userDetails);
-        const hashedPassword = userDetails.password
-        console.log(hashedPassword)
+        const hashedPassword = userDetails.password;
+        console.log(hashedPassword);
  
         const check = await bcrypt.compare(plainTextPassword, hashedPassword);
         console.log(check);

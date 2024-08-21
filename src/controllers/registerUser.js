@@ -15,6 +15,7 @@ async function registerUser(req,res) {
                 password: req.body.password
             }
         );
+        console.log(user);
         res.status(201).send(`User ${req.body.username} has been created.`)
     } catch (error) {
         console.log(error);
