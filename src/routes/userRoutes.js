@@ -5,7 +5,7 @@ const listUsers = require("../controllers/listUsers");
 const checkPassword = require("../middleware/checkPassword");
 const deleteUser = require("../controllers/deleteUser");
 const updatePassword = require("../controllers/changePassword");
-const login = require("../controllers/logIn");
+const login = require("../controllers/login");
 const checkToken = require("../middleware/checkToken");
 
 const userRouter = Router();
